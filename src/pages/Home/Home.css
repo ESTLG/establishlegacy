@@ -1,0 +1,89 @@
+/* src/pages/Home/Home.css */
+
+.home-hero {
+  background: var(--color-offwhite);
+  border-bottom: 1px solid var(--color-navy-10);
+}
+
+.home-hero__inner {
+  max-width: var(--max-width-site);
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+}
+
+.home-hero__heading {
+  max-width: 16ch;
+}
+
+.home-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.home-pillars__heading {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.75rem;
+  color: var(--color-navy);
+  margin: 0 0 var(--space-5);
+}
+
+.home-pillars__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-5);
+}
+
+.home-pillars__card h3 {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  margin: 0 0 var(--space-2);
+}
+
+.home-pillars__card p {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-navy-soft);
+  margin: 0;
+}
+
+.home-banner {
+  background: var(--color-navy);
+}
+
+.home-banner__inner {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+  text-align: center;
+}
+
+.home-banner__inner h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.75rem;
+  color: var(--color-white);
+  margin: 0 0 var(--space-3);
+}
+
+.home-banner__inner p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(249, 250, 251, 0.75);
+  margin: 0 0 var(--space-4);
+}
+
+.home-banner .button--primary {
+  background: var(--color-gold);
+  color: var(--color-navy);
+}
+
+.home-banner .button--primary:hover {
+  background: #c9a751;
+}

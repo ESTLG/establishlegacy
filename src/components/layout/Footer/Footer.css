@@ -1,0 +1,61 @@
+/* src/components/layout/Footer/Footer.css */
+
+.site-footer {
+  background: rgba(27, 41, 67, 0.97);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  margin-top: var(--space-6);
+}
+
+.site-footer__inner {
+  max-width: var(--max-width-site);
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-4);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.site-footer__name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--color-gold);
+  letter-spacing: 0.02em;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.site-footer__link {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: rgba(249, 250, 251, 0.7);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.site-footer__link:hover {
+  color: var(--color-white);
+}
+
+.site-footer__copyright {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: rgba(249, 250, 251, 0.45);
+  width: 100%;
+  order: 3;
+}
+
+@media (min-width: 640px) {
+  .site-footer__copyright {
+    width: auto;
+    order: 0;
+    margin-left: auto;
+  }
+}

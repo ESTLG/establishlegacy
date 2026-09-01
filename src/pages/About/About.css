@@ -1,0 +1,29 @@
+/* src/pages/About/About.css */
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-5);
+  padding-top: 0;
+}
+
+.about-values__item {
+  border-top: 2px solid var(--color-gold);
+  padding-top: var(--space-3);
+}
+
+.about-values__item h3 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  margin: 0 0 var(--space-2);
+}
+
+.about-values__item p {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-navy-soft);
+  margin: 0;
+}

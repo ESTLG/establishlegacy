@@ -1,0 +1,95 @@
+/* src/styles/page.css
+   Shared structural styles for marketing pages (Home, Resources, About). */
+
+.site-main {
+  min-height: calc(100vh - var(--header-height) - 140px);
+}
+
+.page-section {
+  max-width: var(--max-width-site);
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+}
+
+.page-section--tight {
+  max-width: 760px;
+}
+
+.page-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin: 0 0 var(--space-2);
+}
+
+.page-heading {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2rem, 1.6rem + 1.6vw, 2.75rem);
+  line-height: 1.15;
+  color: var(--color-navy);
+  margin: 0 0 var(--space-3);
+  max-width: 20ch;
+}
+
+.page-lede {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-navy-soft);
+  max-width: 62ch;
+  margin: 0 0 var(--space-4);
+}
+
+.page-body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-navy-soft);
+  max-width: 68ch;
+}
+
+.page-body p + p {
+  margin-top: var(--space-3);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border-radius: var(--radius);
+  padding: var(--space-3) var(--space-5);
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.button--primary {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+.button--primary:hover {
+  background: #24345a;
+}
+
+.button--outline {
+  background: transparent;
+  color: var(--color-navy);
+  border: 1px solid var(--color-navy-20);
+}
+
+.button--outline:hover {
+  border-color: var(--color-navy);
+}
