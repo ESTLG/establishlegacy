@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/establishlegacy/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Established Legacy</title>
+    <script type="module" crossorigin src="/establishlegacy/assets/index-Blh3vpfQ.js"></script>
+    <link rel="stylesheet" crossorigin href="/establishlegacy/assets/index-enC_73eS.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- GitHub Pages has no server-side routing, so a deep link like
+         /establishlegacy/about gets redirected here as a query string
+         by 404.html, then this script restores the real URL. See
+         https://github.com/rafgraph/spa-github-pages -->
+    <script>
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+  </body>
+</html>
