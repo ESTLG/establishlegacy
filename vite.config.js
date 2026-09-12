@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   // Must match the GitHub repo name since this deploys to
   // https://<user>.github.io/establishlegacy/
-  base: '/',
+  base: '/establishlegacy/',
 })
