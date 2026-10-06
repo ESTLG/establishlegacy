@@ -1,19 +1,20 @@
 // src/pages/Home/Home.jsx
 import { Link } from "react-router-dom";
+import { IMA_URL } from "../../lib/constants";
 import "./Home.css";
 
 const PILLARS = [
   {
-    title: "Know your number",
-    text: "See how buyers value your business today.",
+    title: "Know what it's worth",
+    text: "See your business the way a buyer will.",
   },
   {
-    title: "Step back",
-    text: "Build a business that runs without you.",
+    title: "Step back with confidence",
+    text: "Make sure it runs without you.",
   },
   {
-    title: "Sell stronger",
-    text: "Go to market ready, and on your terms.",
+    title: "Sell on your terms",
+    text: "Your timeline. Your price. Your legacy.",
   },
 ];
 
@@ -24,15 +25,15 @@ export default function Home() {
         <div className="home-hero__inner">
           <p className="page-eyebrow">The Established Legacy</p>
           <h1 className="page-heading home-hero__heading">
-            Build a business buyers want
+            You built it. Now get what it's worth.
           </h1>
-          <p className="page-lede">Raise its value. Then sell on your terms.</p>
+          <p className="page-lede">
+            Thinking about selling your business in the next few years? We help
+            owners prepare, so they retire on their terms.
+          </p>
           <div className="home-hero__actions">
             <Link to="/sellability-score" className="button button--primary">
-              Take the Sellability Assessment
-            </Link>
-            <Link to="/about" className="button button--outline">
-              Learn more about us
+              Take the Free Assessment
             </Link>
           </div>
         </div>
@@ -52,11 +53,11 @@ export default function Home() {
 
       <section className="home-banner">
         <div className="home-banner__inner">
-          <h2>Curious where your business stands?</h2>
-          <p>Free. 5 minutes. Instant score.</p>
-          <Link to="/sellability-score" className="button button--primary">
-            Get your Sellability Score
-          </Link>
+          <h2>Backed by IMA Consulting</h2>
+          <p>Experienced advisors who help businesses grow and transform.</p>
+          <a href={IMA_URL} className="button button--primary">
+            Visit IMA Consulting
+          </a>
         </div>
       </section>
     </>
