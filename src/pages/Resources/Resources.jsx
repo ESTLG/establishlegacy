@@ -4,23 +4,23 @@ import "./Resources.css";
 const RESOURCES = [
   {
     tag: "Guide",
-    title: "Lorem ipsum dolor sit amet",
-    text: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "What buyers look for in a business",
+    text: "The operational, financial, and leadership qualities that drive valuation, and how to strengthen them before you sell.",
   },
   {
     tag: "Checklist",
-    title: "Ut enim ad minim veniam",
-    text: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    title: "Exit readiness checklist",
+    text: "A step-by-step list of what to have in place before you start conversations with buyers.",
   },
   {
     tag: "Article",
-    title: "Duis aute irure dolor",
-    text: "In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    title: "Reducing owner dependence",
+    text: "Why businesses that rely on their owner sell for less, and practical ways to step back from daily operations.",
   },
   {
     tag: "Video",
-    title: "Excepteur sint occaecat",
-    text: "Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    title: "Planning your exit timeline",
+    text: "How far ahead to start preparing, and what to focus on in the years leading up to a sale.",
   },
 ];
 
@@ -29,10 +29,10 @@ export default function Resources() {
     <>
       <section className="page-section page-section--tight">
         <p className="page-eyebrow">Resources</p>
-        <h1 className="page-heading">Lorem ipsum dolor sit amet, consectetur</h1>
+        <h1 className="page-heading">Tools to prepare your business for sale</h1>
         <p className="page-lede">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore.
+          Guides, checklists, and insights to help you understand what drives value
+          and take practical steps toward a successful exit.
         </p>
       </section>
 
