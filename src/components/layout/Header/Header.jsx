@@ -2,10 +2,10 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Wordmark from "../../../assets/Wordmark_Navy.jpg";
+import { IMA_URL } from "../../../lib/constants";
 import "./Header.css";
 
 const NAV_LINKS = [
-  { to: "/", label: "Home" },
   { to: "/resources", label: "Resources" },
   { to: "/sellability-score", label: "Sellability Score" },
   { to: "/about", label: "About" },
@@ -17,19 +17,21 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <NavLink to="/" className="site-header__logo" onClick={() => setMenuOpen(false)}>
+        <a href={IMA_URL} className="site-header__logo">
           <img src={Wordmark} alt="The Established Legacy" />
-        </NavLink>
+        </a>
 
         <nav
           className={`site-header__nav ${menuOpen ? "site-header__nav--open" : ""}`}
           aria-label="Primary"
         >
+          <a href={IMA_URL} className="site-header__link">
+            Home
+          </a>
           {NAV_LINKS.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
-              end={link.to === "/"}
               className={({ isActive }) =>
                 `site-header__link ${isActive ? "site-header__link--active" : ""}`
               }

@@ -4,16 +4,16 @@ import "./Home.css";
 
 const PILLARS = [
   {
-    title: "Know where you stand",
-    text: "Get a clear, honest read on how buyers will see your business today, and where its value is being held back.",
+    title: "Know your number",
+    text: "See how buyers value your business today.",
   },
   {
-    title: "Build a business that runs without you",
-    text: "Document your systems, strengthen your leadership team, and reduce owner dependence, so the business keeps performing after you step away.",
+    title: "Step back",
+    text: "Build a business that runs without you.",
   },
   {
-    title: "Exit on your terms",
-    text: "Go to market with a business that is organized, scalable, and ready for due diligence, and negotiate from a position of strength.",
+    title: "Sell stronger",
+    text: "Go to market ready, and on your terms.",
   },
 ];
 
@@ -24,12 +24,9 @@ export default function Home() {
         <div className="home-hero__inner">
           <p className="page-eyebrow">The Established Legacy</p>
           <h1 className="page-heading home-hero__heading">
-            Build a business buyers want to own
+            Build a business buyers want
           </h1>
-          <p className="page-lede">
-            Your business is your legacy. We help owners increase its value, reduce
-            their day-to-day involvement, and prepare for a successful sale.
-          </p>
+          <p className="page-lede">Raise its value. Then sell on your terms.</p>
           <div className="home-hero__actions">
             <Link to="/sellability-score" className="button button--primary">
               Take the Sellability Assessment
@@ -42,7 +39,7 @@ export default function Home() {
       </section>
 
       <section className="page-section home-pillars">
-        <h2 className="home-pillars__heading">How we help you prepare</h2>
+        <h2 className="home-pillars__heading">How we help</h2>
         <div className="home-pillars__grid">
           {PILLARS.map((pillar) => (
             <div className="home-pillars__card" key={pillar.title}>
@@ -56,10 +53,7 @@ export default function Home() {
       <section className="home-banner">
         <div className="home-banner__inner">
           <h2>Curious where your business stands?</h2>
-          <p>
-            The free Sellability Assessment takes a few minutes and shows how
-            market-ready your business is, plus the areas that can raise its value.
-          </p>
+          <p>Free. 5 minutes. Instant score.</p>
           <Link to="/sellability-score" className="button button--primary">
             Get your Sellability Score
           </Link>

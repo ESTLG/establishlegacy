@@ -4,23 +4,23 @@ import "./Resources.css";
 const RESOURCES = [
   {
     tag: "Guide",
-    title: "What buyers look for in a business",
-    text: "The operational, financial, and leadership qualities that drive valuation, and how to strengthen them before you sell.",
+    title: "What buyers look for",
+    text: "The qualities that drive your valuation.",
   },
   {
     tag: "Checklist",
     title: "Exit readiness checklist",
-    text: "A step-by-step list of what to have in place before you start conversations with buyers.",
+    text: "What to have in place before you talk to buyers.",
   },
   {
     tag: "Article",
     title: "Reducing owner dependence",
-    text: "Why businesses that rely on their owner sell for less, and practical ways to step back from daily operations.",
+    text: "Why it costs you, and how to step back.",
   },
   {
     tag: "Video",
     title: "Planning your exit timeline",
-    text: "How far ahead to start preparing, and what to focus on in the years leading up to a sale.",
+    text: "When to start, and what to focus on.",
   },
 ];
 
@@ -29,11 +29,8 @@ export default function Resources() {
     <>
       <section className="page-section page-section--tight">
         <p className="page-eyebrow">Resources</p>
-        <h1 className="page-heading">Tools to prepare your business for sale</h1>
-        <p className="page-lede">
-          Guides, checklists, and insights to help you understand what drives value
-          and take practical steps toward a successful exit.
-        </p>
+        <h1 className="page-heading">Prepare to sell</h1>
+        <p className="page-lede">Practical tools to raise your business's value.</p>
       </section>
 
       <section className="page-section resources-grid">

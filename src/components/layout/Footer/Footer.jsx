@@ -1,5 +1,6 @@
 // src/components/layout/Footer/Footer.jsx
 import { NavLink } from "react-router-dom";
+import { IMA_URL } from "../../../lib/constants";
 import "./Footer.css";
 
 export default function Footer() {
@@ -10,7 +11,7 @@ export default function Footer() {
       <div className="site-footer__inner">
         <span className="site-footer__name">The Established Legacy</span>
         <nav className="site-footer__links" aria-label="Footer">
-          <NavLink to="/" className="site-footer__link">Home</NavLink>
+          <a href={IMA_URL} className="site-footer__link">Home</a>
           <NavLink to="/resources" className="site-footer__link">Resources</NavLink>
           <NavLink to="/sellability-score" className="site-footer__link">Sellability Score</NavLink>
           <NavLink to="/about" className="site-footer__link">About</NavLink>
