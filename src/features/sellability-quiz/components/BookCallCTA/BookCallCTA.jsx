@@ -1,8 +1,6 @@
 // src/components/BookCallCTA/BookCallCTA.jsx
 import "./BookCallCTA.css";
-
-// TODO: replace "#" with your real scheduling link (Calendly, etc.)
-const BOOKING_URL = "www.calendly.com/ima-meeting";
+import { BOOKING_URL } from "../../../../lib/constants";
 
 export default function BookCallCTA() {
   return (
