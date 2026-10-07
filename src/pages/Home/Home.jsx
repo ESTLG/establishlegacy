@@ -35,6 +35,9 @@ export default function Home() {
             <Link to="/sellability-score" className="button button--primary">
               Take the Free Assessment
             </Link>
+            <a href={IMA_URL} className="button button--outline">
+              Visit IMA Consulting
+            </a>
           </div>
         </div>
       </section>
