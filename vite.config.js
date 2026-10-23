@@ -4,7 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Must match the GitHub repo name since this deploys to
-  // https://<user>.github.io/establishlegacy/
-  base: '/establishlegacy/',
+  // Served from the custom domain root (https://www.establishedlegacy.com/)
+  base: '/',
 })
