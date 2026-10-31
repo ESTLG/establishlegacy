@@ -1,4 +1,4 @@
-// src/pages/Home/Home.jsx
+// src/pages/Home/Home.jsx iuhjgv
 import { Link } from "react-router-dom";
 import { IMA_URL } from "../../lib/constants";
 import "./Home.css";
