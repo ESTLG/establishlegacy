@@ -23,21 +23,34 @@ export default function Home() {
     <>
       <section className="home-hero">
         <div className="home-hero__inner">
-          <p className="page-eyebrow">The Established Legacy</p>
-          <h1 className="page-heading home-hero__heading">
-            You built it. Now get what it's worth.
-          </h1>
-          <p className="page-lede">
-            Thinking about selling your business in the next few years? We help
-            owners prepare, so they retire on their terms.
-          </p>
-          <div className="home-hero__actions">
-            <Link to="/sellability-score" className="button button--primary">
-              Take the Free Assessment
-            </Link>
-            <a href={IMA_URL} className="button button--outline">
-              Visit IMA Consulting
-            </a>
+          <div className="home-hero__content">
+            <p className="page-eyebrow">The Established Legacy</p>
+            <h1 className="page-heading home-hero__heading">
+              You built it. Now get what it's worth.
+            </h1>
+            <p className="page-lede">
+              Thinking about selling your business in the next few years? We help
+              owners prepare, so they retire on their terms.
+            </p>
+            <div className="home-hero__actions">
+              <Link to="/sellability-score" className="button button--primary">
+                Take the Free Assessment
+              </Link>
+              <a href={IMA_URL} className="button button--outline">
+                Grow Your Business
+              </a>
+            </div>
+          </div>
+
+          <div className="home-hero__media">
+            {/* Video file lives at public/videos/home-hero.mp4 */}
+            <video
+              className="home-hero__video"
+              src="/videos/home-hero.mp4"
+              autoPlay muted loop
+              playsInline
+              preload="metadata"
+            />
           </div>
         </div>
       </section>
